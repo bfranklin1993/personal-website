@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Thoughts</title>
+    <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Base styles */
+        body {
+            font-family: 'Urbanist', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.7;
+            padding: 5% 10%;
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            font-size: 1.2rem;
+        }
+        
+        /* Typography */
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-top: 3rem;
+            margin-bottom: 0.5rem;
+            color: darkorange;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+        }
+        
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        
+        a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Blog posts */
+        article {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #222;
+            padding-bottom: 3rem;
+        }
+        
+        article:last-child {
+            border-bottom: none;
+        }
+        
+        .post-date {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-bottom: 1rem;
+        }
+        
+        /* Table of contents */
+        .toc {
+            margin: 2rem 0 3rem;
+            padding: 1rem;
+            border: 1px solid #333;
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .toc ul {
+            list-style-type: none;
+        }
+        
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .toc a {
+            color: #fff;
+            opacity: 0.8;
+        }
+        
+        .toc a:hover {
+            opacity: 1;
+        }
+        
+        /* Navigation */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 3rem;
+            font-size: 1rem;
+        }
+        
+        .arrow {
+            font-size: 0.9rem;
+            margin-right: 0.25rem;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10% 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="text-align: left;">
+        <a href="index.html" class="back-link"><span class="arrow">←</span> Back home</a>
+        
+        <h1>My thoughts</h1>
+        <p>Welcome! Here, I share my thoughts, experiences, and insights.</p>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h2>Posts</h2>
+            <ul>
+                <li><a href="#post-1">Design systems that scale</a></li>
+                <li><a href="#post-2">Honest product design</a></li>
+                <li><a href="#post-3">Simplicity as a practice</a></li>
+                <!-- Add new entries here when you add new posts -->
+            </ul>
+        </div>
+
+        <!-- Blog post 1 -->
+        <article id="post-1" class="article">
+            <h2>Design systems that scale</h2>
+            <div class="post-date">Published on: March 1, 2025</div>
+            <p>Building design systems that can grow with your company is challenging but crucial. I've found that focusing on fundamental principles rather than specific implementations leads to more adaptable systems.</p>
+            <p>The key is to create a system that designers want to use, not one they feel forced to adopt.</p>
+            <p>By establishing clear guidelines while allowing for contextual flexibility, we can build systems that support rather than constrain creativity.</p>
+            <p>Three principles I follow when developing design systems:</p>
+            <ol>
+                <li>Start with user needs, not component libraries</li>
+                <li>Create strong documentation and examples</li>
+                <li>Allow for evolution rather than enforcing strict compliance</li>
+            </ol>
+        </article>
+
+        <!-- Blog post 2 -->
+        <article id="post-2">
+            <h2>Honest product design</h2>
+            <div class="post-date">Published on: February 15, 2025</div>
+            <p>What does it mean to create "honest" digital products? For me, it's about designing with user interests truly at heart, avoiding dark patterns, and creating interfaces that communicate clearly.</p>
+            <p>Transparency isn't just an ethical choice—it builds long-term trust and loyalty.</p>
+            <p>When users understand exactly what they're getting and how a product works, they develop deeper confidence in both the product and the company behind it.</p>
+            <p>Honest design means:</p>
+            <ul>
+                <li>Setting clear expectations about what a product can and cannot do</li>
+                <li>Making costs, limitations, and data usage transparent</li>
+                <li>Creating interfaces that guide rather than manipulate</li>
+            </ul>
+        </article>
+
+        <!-- Blog post 3 -->
+        <article id="post-3">
+            <h2>Simplicity as a practice</h2>
+            <div class="post-date">Published on: January 20, 2025</div>
+            <p>The hardest part of design isn't adding features—it's knowing what to remove. I've been exploring how constraints and intentional limitation can lead to more powerful, focused products.</p>
+            <p>Simplicity isn't just an aesthetic; it's a practice that requires constant vigilance.</p>
+            <p>Every new feature or element we add comes with a cognitive cost for users. Great design is often about reducing options to only what's truly necessary.</p>
+            <p>I've found that regular design audits help maintain simplicity. Set aside time each quarter to review your product and ask: "What can we remove without compromising core functionality?"</p>
+        </article>
+
+        <!-- Template for adding new posts (copy and modify this) -->
+        <!--
+        <article id="post-4">
+            <h2>Your Post Title</h2>
+            <div class="post-date">Published on: Month Day, Year</div>
+            <p>Your first paragraph here.</p>
+            <p>Your second paragraph here.</p>
+            <p>Add as many paragraphs as you need.</p>
+        </article>
+        -->
+    </div>
+</body>
+</html>
