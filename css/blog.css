@@ -190,6 +190,92 @@ body {
     background-color: darkorange;
 }
 
+/* Newsletter signup section */
+.newsletter-signup {
+    background-color: rgba(255, 140, 0, 0.05);
+    border: 1px solid rgba(255, 140, 0, 0.2);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.newsletter-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: darkorange;
+    margin-bottom: 10px;
+}
+
+.newsletter-description {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto 15px auto;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 12px 16px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.newsletter-input:focus {
+    outline: none;
+    border-color: darkorange;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.newsletter-input::placeholder {
+    color: #666;
+}
+
+.newsletter-button {
+    padding: 12px 24px;
+    background-color: darkorange;
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-button:hover {
+    background-color: #ff8c00;
+    transform: translateY(-2px);
+}
+
+.newsletter-note {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.rss-link {
+    color: darkorange;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.rss-link:hover {
+    color: #ff8c00;
+    text-decoration: underline;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .container {
@@ -208,10 +294,30 @@ body {
     .post-content {
         font-size: 1.1rem;
     }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-button {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
         padding: 25px;
+    }
+
+    .newsletter-signup {
+        padding: 20px;
+    }
+
+    .newsletter-title {
+        font-size: 1.3rem;
+    }
+
+    .newsletter-description {
+        font-size: 1rem;
     }
 }
